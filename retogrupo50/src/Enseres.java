@@ -73,6 +73,7 @@ public class Enseres{
     }
 
     public Double precioFinal(){
+        //lo de los parentesis hace referencia a la adicion
         return precioBase + (this.comprobarTamano(tamano) + this.comprobarColor(color));
 
     }
