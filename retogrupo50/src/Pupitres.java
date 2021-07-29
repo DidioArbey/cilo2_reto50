@@ -35,7 +35,7 @@ public class Pupitres extends Enseres{
     }
     
     @Override
-    public Double precioFinal(){
+    public Double precioFinal() {
         return super.precioFinal()+comprobarAdicion(compartimiento, mesaTipoUniversitaria);
     }
 }

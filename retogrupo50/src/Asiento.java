@@ -32,7 +32,7 @@ public class Asiento extends Enseres {
     }
 
     @Override
-    public Double precioFinal(){
+    public Double precioFinal() {
         return super.precioFinal()+ comprobarPeso(peso);
 
     }

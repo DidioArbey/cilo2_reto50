@@ -1,4 +1,4 @@
-public class Enseres{
+public class Enseres {
     //Atributos
     private Double precioBase;
     private String color;
@@ -34,45 +34,44 @@ public class Enseres{
         switch(color){
             case "negro" :
                 return 100.0;
-                break;
+                
             case "cafe" :
                 return 80.0;
-                break;
+                
             case "blanco":
                 return 70.0;
-                break;
+                
             case "rojo" :
                 return 50.0;
-                break;
+                
             default:
                 return 0.0;
         }
 
     }
 
-    private Double comprobarTamano(Integer tamano) throws Exception {
-        try {
-            if(tamano > 0 && tamano <= 1){
+    private Double comprobarTamano(Integer tamano)  {
+
+            if(tamano <= 1 ){
                 return 200.0;
-            } else if (tamano >1 && tamano <=2){
+            } else if (tamano <=2 ){
                 return 300.0;
-            } else if (tamano >2 && tamano <=3){
+            } else if (tamano <=3 ){
                 return 400.0;
-            } else if (tamano > 3 && tamano <=4 ){
+            } else if (tamano <=4 ){
                 return 500.0;
-            } else if (tamano > 4 && tamano <=5){
+            } else if (tamano <=5 ){
                 return 600.0;
-            } else if (tamano > 5 && tamano <=6){
+            } else if (tamano <=6 ){
                 return 700.0;
             }else{
                 return 0.0;
             }
-        }catch(Exception e){
-            System.err.println(e);
-        }
+    
+        //return null;
     }
 
-    public Double precioFinal(){
+    public Double precioFinal() {
         //lo de los parentesis hace referencia a la adicion
         return precioBase + (this.comprobarTamano(tamano) + this.comprobarColor(color));
 
@@ -98,5 +97,4 @@ public class Enseres{
     public void setTamano(Integer tamano) {
         this.tamano = tamano;
     }
-    
 }
