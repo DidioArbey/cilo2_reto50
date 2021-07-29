@@ -73,7 +73,7 @@ public class Enseres{
     }
 
     public Double precioFinal(){
-        
+        return precioBase + (this.comprobarTamano(tamano) + this.comprobarColor(color));
 
     }
 
