@@ -29,14 +29,16 @@ public class Enseres{
     }
     //Metodos
 
-    private void comprobarColor(String color){
+    private void comprobarColor(String color){
 
     }
-    public void comprobarTamano(Integer tamano){
+
+    public void comprobarTamano(Integer tamano){
 
     }
-    //Métodos publicos 
-    /** Devuelve el precio base del enser */ 
+
+    //Métodos publicos  Devuelve el precio base del enser 
+
     public Double getPrecioBase() {
         return precioBase;
     }
