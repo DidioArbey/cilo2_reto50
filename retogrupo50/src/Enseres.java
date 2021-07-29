@@ -3,6 +3,7 @@ public class Enseres{
     private Double precioBase;
     private String color;
     private Integer tamano;
+    // private Double adicion =0.0;
 
     //constantes
     private final Double PRECIO_BASE=200.0;
@@ -29,16 +30,33 @@ public class Enseres{
     }
     //Metodos
 
-    private void comprobarColor(String color){
+    private Double comprobarColor(String color){
+        switch(color){
+            case "negro" :
+                return 100.0;
+                break;
+            case "cafe" :
+                return 80.0;
+                break;
+            case "blanco":
+                return 70.0;
+                break;
+            case "rojo" :
+                return 50.0;
+                break;
+            default:
+                return 0.0;
+        }
 
     }
 
-    public void comprobarTamano(Integer tamano){
+    private Double comprobarTamano(Integer tamano){
+        
 
     }
 
     public Double precioFinal(){
-        
+
     }
 
     //Métodos publicos  Devuelve el precio base del enser 
