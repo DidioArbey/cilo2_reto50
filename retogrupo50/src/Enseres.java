@@ -37,6 +37,10 @@ public class Enseres{
 
     }
 
+    public Double precioFinal(){
+        
+    }
+
     //Métodos publicos  Devuelve el precio base del enser 
 
     public Double getPrecioBase() {
