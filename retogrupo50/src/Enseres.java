@@ -10,24 +10,22 @@ public class Enseres{
     private final Integer TAMANO_BASE=1;
 
     //constructor
-    public Enseres(){
-        //this(PRECIO_BASE,TAMANO_BASE,COLOR_BASE);
-        precioBase=PRECIO_BASE;
-        color=COLOR_BASE;
-        tamano=TAMANO_BASE;
+    public Enseres() {
     }
-    public Enseres(Double precioBase, Integer tamano){
-        //this(precioBase,tamano,COLOR_BASE);
-        this.precioBase=precioBase;
-        this.tamano=tamano;
-        this.color=COLOR_BASE;
+
+    public Enseres(Double precioBase, String color, Integer tamano) {
+        this.precioBase = precioBase;
+        this.color = color;
+        this.tamano = tamano;
     }
-    public Enseres(Double precioBase, Integer tamano, String color){
-        this.precioBase=precioBase;
-        this.tamano=tamano;
-        this.color=color;
+
+    public Enseres(Double precioBase, Integer tamano) {
+        this.precioBase = precioBase;
+        this.tamano = tamano;
+        this.color = COLOR_BASE;
     }
     //Metodos
+
     private void comprobarColor(String color){
 
     }
