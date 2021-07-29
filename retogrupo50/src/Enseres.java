@@ -11,6 +11,9 @@ public class Enseres{
 
     //constructor
     public Enseres() {
+        this.precioBase=PRECIO_BASE;
+        this.color=COLOR_BASE;
+        this.tamano=TAMANO_BASE;
     }
 
     public Enseres(Double precioBase, String color, Integer tamano) {
