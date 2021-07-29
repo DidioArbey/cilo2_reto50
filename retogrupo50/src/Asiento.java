@@ -18,5 +18,25 @@ public class Asiento extends Enseres {
         super(precioBase, color, tamano);
         this.peso=peso;
     }
-    //
+    // get del atributo peso
+    public Integer getPeso() {
+        return peso;
+    }
+    //Metodos
+
+    private Double comprobarPeso(Integer peso){
+        if(peso > 65){
+            return 50.0;
+        }else{
+            return 0.0;
+        }
+
+    }
+
+    @Override
+    public Double precioFinal(){
+        return super.precioFinal()+ comprobarPeso(peso);
+
+    }
+
 }
