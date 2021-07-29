@@ -19,5 +19,23 @@ public class Pupitres extends Enseres{
         this.compartimiento=COMPARTIMIENTO_BASE;
         this.mesaTipoUniversitaria=false;
     }
+
+    //metodos
+
+    private Double comprobarAdicion(Integer compartimiento,Boolean mesaTipoUniversitaria){
+        Double adicion=0.0;
+        if(mesaTipoUniversitaria==true){
+            adicion += 100.0;
+        }
+        if(compartimiento > 3){
+            adicion += 50.0;
+        }
+        return adicion;
+
+    }
     
+    @Override
+    public Double precioFinal(){
+        return super.precioFinal()+comprobarAdicion(compartimiento, mesaTipoUniversitaria);
+    }
 }
