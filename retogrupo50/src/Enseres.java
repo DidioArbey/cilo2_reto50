@@ -50,25 +50,30 @@ public class Enseres{
 
     }
 
-    private Double comprobarTamano(Integer tamano){
-
-        if(tamano > 0 && tamano <= 1){
-            return 200.0;
-        } else if (tamano >1 && tamano <=2){
-            return 300.0;
-        } else if (tamano >2 && tamano <=3){
-            return 400.0;
-        } else if (tamano > 3 && tamano <=4 ){
-            return 500.0;
-        } else if (tamano > 4 && tamano <=5){
-            return 600.0;
-        } else if (tamano > 5 && tamano <=6){
-            return 700.0;
+    private Double comprobarTamano(Integer tamano) throws Exception {
+        try {
+            if(tamano > 0 && tamano <= 1){
+                return 200.0;
+            } else if (tamano >1 && tamano <=2){
+                return 300.0;
+            } else if (tamano >2 && tamano <=3){
+                return 400.0;
+            } else if (tamano > 3 && tamano <=4 ){
+                return 500.0;
+            } else if (tamano > 4 && tamano <=5){
+                return 600.0;
+            } else if (tamano > 5 && tamano <=6){
+                return 700.0;
+            }else{
+                return 0.0;
+            }
+        }catch(Exception e){
+            System.err.println(e);
         }
-
     }
 
     public Double precioFinal(){
+        
 
     }
 
