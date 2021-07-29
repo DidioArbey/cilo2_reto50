@@ -16,13 +16,17 @@ public class Enseres{
         color=COLOR_BASE;
         tamano=TAMANO_BASE;
     }
-    public Enseres(Double precioBase, Double tamano){
-        //this(precioBase,tamano,COLOR_BASE);
-        this.precioBase=precioBase;
-        this.tamano=tamano;
-        this.color=COLOR_BASE;
-    }
-    
+    // public Enseres(Double precioBase, Double tamano){
+    //     //this(precioBase,tamano,COLOR_BASE);
+    //     this.precioBase=precioBase;
+    //     this.tamano=tamano;
+    //     this.color=COLOR_BASE;
+    // }
+    // public Enseres(Double precioBase, Double tamano, String color){
+    //     this.precioBase=precioBase;
+    //     this.tamano=tamano;
+    //     this.color=color;
+    // }
     //Metodos
     private void comprobarColor(String color){
 
